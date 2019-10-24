@@ -2,7 +2,7 @@
     <string name="app_name">Dialogs</string>
     <string name="alert_title">Alert Dialog Single</string>
     <string name="alert_title_checkbox">Alert Dialog Checkbox</string>
-    <string name="alert_title_radio">Alert Dialog Radio Option</string>
+    <string name="alert_title_radio">Alert Dialog Radio Button</string>
     <string name="alert_msg">Message: Alert Dialog Message</string>
     <string name="alert_button_ok">OK</string>
     <string name="alert_button_cancel">CANCEL</string>

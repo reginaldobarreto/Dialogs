@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Dialogs</string>
-    <string name="alert_title">Alert Dialog Title</string>
-    <string name="alert_msg">Message: Alert Dialog Mesage</string>
+    <string name="alert_title">Alert Dialog Single</string>
+    <string name="alert_title_checkbox">Alert Dialog Checkbox</string>
+    <string name="alert_title_radio">Alert Dialog Radio Option</string>
+    <string name="alert_msg">Message: Alert Dialog Message</string>
     <string name="alert_button_ok">OK</string>
     <string name="alert_button_cancel">CANCEL</string>
     <string name="alert_simple">ALERT SIMPLE</string>
@@ -9,4 +11,5 @@
     <string name="item1">Item 1</string>
     <string name="item2">Item 2</string>
     <string name="item3">Item 3</string>
+    <string name="item">Item :</string>
 </resources>

@@ -6,4 +6,7 @@
     <string name="alert_button_cancel">CANCEL</string>
     <string name="alert_simple">ALERT SIMPLE</string>
     <string name="alert_multiple">ALERT MULTIPLE</string>
+    <string name="item1">Item 1</string>
+    <string name="item2">Item 2</string>
+    <string name="item3">Item 3</string>
 </resources>

@@ -18,7 +18,11 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.button)
     Button button;
-    AlertDialog alertDialog;
+    @BindView(R.id.button1)
+    Button button1;
+    private AlertDialog alertDialog;
+    private AlertDialog alertDialog1;
+    private String [] opcoes = {"Item 1","Item 2","Item 3"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
 
         builder.setTitle(getString(R.string.alert_title));
         builder.setIcon(R.drawable.ic_stat_alert);
@@ -49,6 +54,21 @@ public class MainActivity extends AppCompatActivity {
         alertDialog = builder.create();
 
 
+        AlertDialog.Builder builder2 = new AlertDialog.Builder(this);
+
+        builder2.setIcon(R.drawable.ic_action_name);
+        builder2.setTitle(R.string.alert_title);
+        builder2.setSingleChoiceItems(opcoes, -1, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Toast.makeText(getApplicationContext()," " + opcoes[which],Toast.LENGTH_LONG).show();
+            }
+        });
+        builder2.setPositiveButton(getString(R.string.alert_button_ok),null);
+        builder2.setNegativeButton(getString(R.string.alert_button_cancel),null);
+        alertDialog1 = builder2.create();
+
+
     }
 
     @OnClick(R.id.button)
@@ -57,9 +77,9 @@ public class MainActivity extends AppCompatActivity {
         alertDialog.show();
     }
 
-    @OnClick(R.id.button)
+    @OnClick(R.id.button1)
     public void submit1(View view) {
         // TODO submit data to server...
-        alertDialog.show();
+        alertDialog1.show();
     }
 }
